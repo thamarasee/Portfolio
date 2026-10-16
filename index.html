@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thamarasee Kularathne | Data Science Portfolio</title>
+    <title>Thamarasee Kularathne | Data Science Portfolio</title>
+  <meta name="title" content="Personal Portfolio | Thamarasee Kularathne" />
+  <meta name="description" content="Everything about my technical journey — projects, achievements, skills, and experiences in one place." />
+  <meta name="keywords" content="Thamarasee Kularathne, Data Science, Machine Learning, Python, Portfolio, University of Kelaniya" />
+  <meta name="author" content="Thamarasee Kularathne" />
+
+  <!-- Open Graph / WhatsApp / LinkedIn / Facebook Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Personal Portfolio" />
+  <meta property="og:description" content="Everything about my technical journey — projects, achievements, skills, and experiences in one place." />
+  <meta property="og:image" content="Profile Image/Profile Photo.jpeg" />
+
+  <!-- Twitter Preview -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Personal Portfolio | Thamarasee Kularathne" />
+  <meta property="twitter:description" content="Everything about my technical journey — projects, achievements, skills, and experiences in one place." />
+  <meta property="twitter:image" content="Profile Image/Profile Photo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=icons1" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        thamarasee
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="cv.pdf" download class="btn btn-outline nav-cv-btn" id="nav-cv-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Internships · 2026
+        </div>
+        <h1 class="hero-name">
+          <span class="hero-name-highlight">Thamarasee</span><br />
+          Kularathne
+        </h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title-prefix">I am a </span>
+          <span class="hero-type-wrap">
+            <span class="hero-typed" id="hero-typed"></span>
+            <span class="hero-cursor">|</span>
+          </span>
+        </div>
+        <p class="hero-desc">
+          3rd Year Computer Science undergraduate at the University of Kelaniya, Sri Lanka,
+          specializing in <span class="highlight-text">Data Science</span>. Passionate about
+          transforming raw data into meaningful insights through <span class="highlight-text">Machine Learning</span>
+          and <span class="highlight-text">AI</span>.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+            View My Work
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost" id="hero-contact-btn">Get in Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/thamarasee" target="_blank" rel="noopener" class="social-link" id="hero-github" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/thamarasee-kularathne-69236b352/" target="_blank" rel="noopener" class="social-link" id="hero-linkedin" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:thamaraseekularathne11@gmail.com" class="social-link" id="hero-email" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-img-wrapper">
+          <!-- Animated Conic Aurora Glow -->
+          <div class="hero-conic-glow"></div>
+          <div class="hero-radial-glow"></div>
+          
+          <!-- Concentric Orbit Rings with Orbiting Luminous Satellites -->
+          <div class="orbit-ring ring-outer">
+            <span class="orbit-satellite satellite-1"></span>
+          </div>
+          <div class="orbit-ring ring-middle">
+            <span class="orbit-satellite satellite-2"></span>
+          </div>
+          <div class="orbit-ring ring-inner"></div>
+
+          <!-- Profile Photo Frame -->
+          <div class="hero-img-frame">
+            <img src="Profile Image/Profile Photo.jpeg" alt="Thamarasee Kularathne" class="hero-img" id="hero-profile-img" />
+            <div class="hero-img-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get To Know Me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-desc">A passionate data enthusiast on a mission to turn complex data into actionable intelligence.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text-col">
+          <p class="about-para">
+            Hi! I'm <strong>Thamarasee Kularathne</strong>, a Computer Science undergraduate at the <strong>University of Kelaniya, Sri Lanka</strong>, with a strong interest in <strong>Data Science and Machine Learning</strong>. I enjoy working with data, building predictive models, and solving real-world problems through technology. I'm eager to learn, grow my skills, and contribute to meaningful projects through internship opportunities.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">3<span class="stat-plus">rd</span></div>
+              <div class="stat-label">Year Undergraduate</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">10<span class="stat-plus">+</span></div>
+              <div class="stat-label">Tech Skills</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">2026</div>
+              <div class="stat-label">Seeking Internship</div>
+            </div>
+          </div>
+          <a href="cv.pdf" download class="btn btn-primary" id="about-cv-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download My CV
+          </a>
+        </div>
+        <div class="about-info-col">
+          <div class="info-card">
+            <h3 class="info-card-title">Quick Info</h3>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-icon">🏫</span>
+                <div>
+                  <span class="info-label">University</span>
+                  <span class="info-value">University of Kelaniya, Sri Lanka</span>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-icon">📚</span>
+                <div>
+                  <span class="info-label">Degree</span>
+                  <span class="info-value">B.Sc. in Computer Science (Data Science)</span>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Sri Lanka</span>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-icon">📧</span>
+                <div>
+                  <span class="info-label">Email</span>
+                  <span class="info-value"><a href="mailto:thamaraseekularathne11@gmail.com" class="info-email-link">thamaraseekularathne11@gmail.com</a></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="section skills-section">
+    <div class="skills-bg-glow"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-desc">Technologies and tools I leverage to build data-driven intelligent solutions.</p>
+      </div>
+
+      <div class="skills-layout-wrapper">
+        <!-- 5 Clean Category Cards -->
+        <div class="skills-cards-grid">
+          
+          <!-- Card 1: Data Science & ML -->
+          <div class="skill-group-card" data-animate>
+            <div class="skill-group-header">
+              <div class="skill-group-title-wrap">
+                <span class="skill-group-icon icon-glow-cyan"><svg class="cat-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="4" width="16" height="16" rx="3" fill="none"/>
+  <path d="M9 9h6v6H9z"/>
+  <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/>
+</svg></span>
+                <div>
+                  <h3 class="skill-group-title">Data Science &amp; Machine Learning</h3>
+                  <span class="skill-group-sub">7 core technologies</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-badges-grid">
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11.9 2c-3.2 0-5.1 1.4-5.1 3.4v2.5h5.3v.8H4.6C2.6 8.7 1 10.4 1 13c0 2.5 1.6 4.3 3.6 4.3h1.8v-2.3c0-2 1.7-3.7 3.8-3.7h5.2c1.7 0 3-1.3 3-3V5.4c0-2-1.9-3.4-5-3.4h-1.5zm-1.8 1.9c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z" fill="#38BDF8"/>
+  <path d="M12.1 22c3.2 0 5.1-1.4 5.1-3.4v-2.5h-5.3v-.8h7.5c2 0 3.6-1.7 3.6-4.3 0-2.5-1.6-4.3-3.6-4.3h-1.8v2.3c0 2-1.7 3.7-3.8 3.7H8.6c-1.7 0-3 1.3-3 3v2.4c0 2 1.9 3.4 5 3.4h1.5zm1.8-1.9c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z" fill="#FACC15"/>
+</svg><span class="skill-chip-name">Python</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke- stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.5 2a3.5 3.5 0 0 0-3.5 3.5c0 .7.2 1.4.6 2A6 6 0 0 0 3 13a6 6 0 0 0 3.5 5.4 3.5 3.5 0 0 0 5 3.6"/>
+  <path d="M14.5 2a3.5 3.5 0 0 1 3.5 3.5c0 .7-.2 1.4-.6 2A6 6 0 0 1 21 13a6 6 0 0 1-3.5 5.4 3.5 3.5 0 0 1-5 3.6"/>
+  <circle cx="12" cy="12" r="2.5" fill="#06B6D4" fill-opacity="0.3"/>
+  <path d="M12 4v5.5M12 14.5V21M6.5 13H9.5M14.5 13h3"/>
+</svg><span class="skill-chip-name">Machine Learning</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke- xmlns="http://www.w3.org/2000/svg">
+  <circle cx="4" cy="6" r="2" fill="#C084FC"/>
+  <circle cx="4" cy="18" r="2" fill="#C084FC"/>
+  <circle cx="12" cy="4" r="2" fill="#C084FC"/>
+  <circle cx="12" cy="12" r="2" fill="#C084FC"/>
+  <circle cx="12" cy="20" r="2" fill="#C084FC"/>
+  <circle cx="20" cy="8" r="2" fill="#C084FC"/>
+  <circle cx="20" cy="16" r="2" fill="#C084FC"/>
+  <path d="M6 6l4-2M6 6l4 6M6 6l4 14M6 18l4-14M6 18l4-6M6 18l4 2M14 4l4 4M14 4l4 12M14 12l4-4M14 12l4 4M14 20l4-12M14 20l4-4" stroke="#C084FC" stroke-opacity="0.5" stroke-linecap="round"/>
+</svg><span class="skill-chip-name">Deep Learning</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 2L2 7.8v4.4l3.6-2.1v9.7l6.4 3.7V17l-3.2-1.9V9.6l3.2 1.8V2z" fill="#FF6F00"/>
+  <path d="M12 2l10 5.8v4.4l-3.6-2.1v9.7L12 23.5V17l3.2-1.9V9.6L12 11.4V2z" fill="#FFA000"/>
+  <path d="M8.8 9.6L12 7.7l3.2 1.9-3.2 1.8-3.2-1.8z" fill="#FFE082"/>
+</svg><span class="skill-chip-name">TensorFlow</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M13.5 2.5a.6.6 0 0 0-.9.2L11 5.3a7.5 7.5 0 0 0-3.5 6.4c0 4.1 3.4 7.5 7.5 7.5s7.5-3.4 7.5-7.5c0-3.2-2.1-6-5.1-7l-.4 1.2c2.5.8 4.3 3.2 4.3 5.8 0 3.5-2.8 6.3-6.3 6.3s-6.3-2.8-6.3-6.3c0-2 .9-3.9 2.5-5.1l1.6-1.5 1.5 2.3c.2.3.6.4.9.2.3-.2.4-.6.2-.9l-1.9-4.8z" fill="#EE4C2C"/>
+  <circle cx="16.5" cy="5.5" r="1.3" fill="#EE4C2C"/>
+</svg><span class="skill-chip-name">PyTorch</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 3a9 9 0 0 0-7.8 4.5l3.9 2.3A4.5 4.5 0 0 1 12 7.5V3z" fill="#38BDF8"/>
+  <path d="M21 12a9 9 0 0 0-4.5-7.8l-2.3 3.9A4.5 4.5 0 0 1 16.5 12H21z" fill="#F97316"/>
+  <path d="M12 21a9 9 0 0 0 7.8-4.5l-3.9-2.3A4.5 4.5 0 0 1 12 16.5V21z" fill="#38BDF8"/>
+  <path d="M3 12a9 9 0 0 0 4.5 7.8l2.3-3.9A4.5 4.5 0 0 1 7.5 12H3z" fill="#F97316"/>
+  <circle cx="12" cy="12" r="2.5" fill="#FFFFFF"/>
+</svg><span class="skill-chip-name">scikit-learn</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke- stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3 20h18"/>
+  <path d="M4 19c2.5-1 4.5-6 6.5-12 1.5-4.5 2-4.5 3 0 2 6 4 11 6.5 12"/>
+  <path d="M12 3v17" stroke="#A78BFA" stroke-dasharray="2 2" stroke-opacity="0.6"/>
+</svg><span class="skill-chip-name">Statistics &amp; Probability</span></div>
+            </div>
+          </div>
+
+          <!-- Card 2: Data Analysis & Visualization -->
+          <div class="skill-group-card" data-animate>
+            <div class="skill-group-header">
+              <div class="skill-group-title-wrap">
+                <span class="skill-group-icon icon-glow-purple"><svg class="cat-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <line x1="18" y1="20" x2="18" y2="10"/>
+  <line x1="12" y1="20" x2="12" y2="4"/>
+  <line x1="6" y1="20" x2="6" y2="14"/>
+  <line x1="2" y1="20" x2="22" y2="20"/>
+</svg></span>
+                <div>
+                  <h3 class="skill-group-title">Data Analysis &amp; Visualization</h3>
+                  <span class="skill-group-sub">6 analytics tools</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-badges-grid">
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="4" width="4" height="16" rx="1.5" fill="#38BDF8"/>
+  <rect x="10" y="8" width="4" height="12" rx="1.5" fill="#C084FC"/>
+  <rect x="17" y="3" width="4" height="17" rx="1.5" fill="#FACC15"/>
+  <circle cx="5" cy="8" r="1" fill="#FFFFFF"/>
+  <circle cx="12" cy="12" r="1" fill="#FFFFFF"/>
+  <circle cx="19" cy="7" r="1" fill="#1E1B4B"/>
+</svg><span class="skill-chip-name">Pandas</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" stroke="#4DABCF" stroke-width="1.6" fill="#4DABCF" fill-opacity="0.15"/>
+  <path d="M12 2v20M3 7l9 5 9-5M3 17l9 5 9-5" stroke="#4DABCF" stroke-width="1.3"/>
+  <circle cx="12" cy="12" r="2" fill="#38BDF8"/>
+</svg><span class="skill-chip-name">NumPy</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke- stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3 3v18h18" stroke="#64748B"/>
+  <path d="M7 16l4-7 4 4 5-9" stroke="#38BDF8"/>
+  <circle cx="7" cy="16" r="1.5" fill="#38BDF8" stroke="none"/>
+  <circle cx="11" cy="9" r="1.5" fill="#38BDF8" stroke="none"/>
+  <circle cx="15" cy="13" r="1.5" fill="#38BDF8" stroke="none"/>
+  <circle cx="20" cy="4" r="1.5" fill="#38BDF8" stroke="none"/>
+</svg><span class="skill-chip-name">Matplotlib</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3 17c3.5 0 4-10 8-10s4.5 10 8 10" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+  <path d="M3 19c3.5 0 4-6 8-6s4.5 6 8 6" stroke="#C084FC" stroke-width="2" stroke-linecap="round" stroke-opacity="0.7"/>
+  <circle cx="11" cy="7" r="1.5" fill="#38BDF8"/>
+  <circle cx="15" cy="17" r="1.5" fill="#C084FC"/>
+</svg><span class="skill-chip-name">Seaborn</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="11" y="2" width="2" height="20" rx="1" fill="#E8762D"/>
+  <rect x="2" y="11" width="20" height="2" rx="1" fill="#E8762D"/>
+  <rect x="5.5" y="5.5" width="2" height="13" rx="1" fill="#1F77B4"/>
+  <rect x="5.5" y="5.5" width="13" height="2" rx="1" fill="#1F77B4"/>
+  <rect x="16.5" y="5.5" width="2" height="13" rx="1" fill="#2CA02C"/>
+  <rect x="5.5" y="16.5" width="13" height="2" rx="1" fill="#D62728"/>
+</svg><span class="skill-chip-name">Tableau</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="13" width="3.5" height="8" rx="1" fill="#E0A800"/>
+  <rect x="10.25" y="8" width="3.5" height="13" rx="1" fill="#F2C811"/>
+  <rect x="16.5" y="3" width="3.5" height="18" rx="1" fill="#FCD34D"/>
+</svg><span class="skill-chip-name">Power BI</span></div>
+            </div>
+          </div>
+
+          <!-- Card 3: Database & Query -->
+          <div class="skill-group-card" data-animate>
+            <div class="skill-group-header">
+              <div class="skill-group-title-wrap">
+                <span class="skill-group-icon icon-glow-cyan"><svg class="cat-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+</svg></span>
+                <div>
+                  <h3 class="skill-group-title">Databases &amp; Query</h3>
+                  <span class="skill-group-sub">Relational &amp; schema design</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-badges-grid">
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke- xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="12" cy="5" rx="8" ry="3" fill="#38BDF8" fill-opacity="0.15"/>
+  <path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5" stroke-linecap="round"/>
+  <path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" stroke-linecap="round"/>
+  <path d="M11 10l2 2-2 2" stroke="#FACC15" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><span class="skill-chip-name">SQL</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3 13.5c1.5-4 5.5-7.5 10-6.5 4 .9 6.5 4 7 8 .3 2.5-1.5 4-3.5 4-3 0-4-3-6-3-2 0-3 2-4.5 2s-2.5-1-3-4.5z" stroke="#00758F" stroke-width="1.8" fill="#00758F" fill-opacity="0.2" stroke-linecap="round"/>
+  <circle cx="16" cy="11" r="1.2" fill="#F29111"/>
+  <path d="M19 13c1.5 0 2.5.5 3 1.5" stroke="#F29111" stroke-width="1.6" stroke-linecap="round"/>
+</svg><span class="skill-chip-name">MySQL</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke- stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="3" width="7" height="6" rx="1.5" fill="#C084FC" fill-opacity="0.15"/>
+  <rect x="14" y="15" width="7" height="6" rx="1.5" fill="#C084FC" fill-opacity="0.15"/>
+  <path d="M10 6h4v12h-4"/>
+  <circle cx="10" cy="6" r="1.2" fill="#C084FC"/>
+  <circle cx="14" cy="18" r="1.2" fill="#C084FC"/>
+</svg><span class="skill-chip-name">Database Design</span></div>
+            </div>
+          </div>
+
+          <!-- Card 4: Programming & Web -->
+          <div class="skill-group-card" data-animate>
+            <div class="skill-group-header">
+              <div class="skill-group-title-wrap">
+                <span class="skill-group-icon icon-glow-purple"><svg class="cat-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <polyline points="16 18 22 12 16 6"/>
+  <polyline points="8 6 2 12 8 18"/>
+</svg></span>
+                <div>
+                  <h3 class="skill-group-title">Programming Languages &amp; Web</h3>
+                  <span class="skill-group-sub">Core languages</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-badges-grid">
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5 19.5c4 1 10 1 14 0M7 21.5c3 .6 7 .6 10 0" stroke="#EA2D2E" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M14 2c1 1.5.5 3-1 4.5-1 1-1.5 2-.5 3.5" stroke="#EA2D2E" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M10 3c1 1.5.5 3-1 4.5-1 1-1.5 2-.5 3.5" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M5 13c0 3.5 3 5 7 5s7-1.5 7-5H5z" stroke="#EA2D2E" stroke-width="1.6" fill="#EA2D2E" fill-opacity="0.15"/>
+  <path d="M19 14c1.5 0 2.5-.5 2.5-1.5s-1-1.5-2.5-1.5" stroke="#EA2D2E" stroke-width="1.6"/>
+</svg><span class="skill-chip-name">Java</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 2l8 4.6v9.2L12 20.4l-8-4.6V6.6L12 2z" stroke="#00599C" stroke-width="1.8" fill="#00599C" fill-opacity="0.15"/>
+  <path d="M11.5 9.5a3.5 3.5 0 0 0-3.5 3.5 3.5 3.5 0 0 0 3.5 3.5" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M15 12h3M16.5 10.5v3M19 12h3M20.5 10.5v3" stroke="#659AD2" stroke-width="1.4" stroke-linecap="round"/>
+</svg><span class="skill-chip-name">C / C++</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 7L3.5 12 8 17" stroke="#E34F26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 7l4.5 5-4.5 5" stroke="#1572B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13.5 4.5L10.5 19.5" stroke="#C084FC" stroke-width="1.8" stroke-linecap="round"/>
+</svg><span class="skill-chip-name">HTML / CSS</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="20" height="20" rx="3.5" fill="#F7DF1E"/>
+  <path d="M8 12.5v4c0 1.5-.8 2-2 2-1 0-1.7-.5-2-1.2l1.4-.9c.2.4.4.6.8.6.4 0 .7-.2.7-.8v-3.7H8zm9.3 1.2c-.8 0-1.4.4-1.4 1 0 .6.4.9 1.5 1.3 1.6.5 2.4 1.2 2.4 2.4 0 1.4-1.1 2.3-2.8 2.3-1.4 0-2.3-.7-2.7-1.6l1.4-.9c.3.5.7.8 1.4.8.7 0 1.1-.3 1.1-.8 0-.5-.4-.8-1.5-1.2-1.5-.5-2.4-1.1-2.4-2.4 0-1.3 1-2.2 2.6-2.2 1.2 0 2 .5 2.4 1.3l-1.3.8c-.3-.5-.7-.8-1.4-.8z" fill="#000000"/>
+</svg><span class="skill-chip-name">JavaScript</span></div>
+            </div>
+          </div>
+
+          <!-- Card 5: Tools & Environment -->
+          <div class="skill-group-card card-span-2" data-animate>
+            <div class="skill-group-header">
+              <div class="skill-group-title-wrap">
+                <span class="skill-group-icon icon-glow-cyan"><svg class="cat-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+</svg></span>
+                <div>
+                  <h3 class="skill-group-title">Developer Tools &amp; Environments</h3>
+                  <span class="skill-group-sub">Version control &amp; workflows</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-badges-grid">
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2.6 10.6l8.8-8.8a1.8 1.8 0 0 1 2.5 0l8.8 8.8a1.8 1.8 0 0 1 0 2.5l-8.8 8.8a1.8 1.8 0 0 1-2.5 0L2.6 13.1a1.8 1.8 0 0 1 0-2.5z" fill="#F05032"/>
+  <circle cx="12" cy="12" r="2" fill="#FFFFFF"/>
+  <circle cx="7.5" cy="12" r="1.5" fill="#FFFFFF"/>
+  <circle cx="12" cy="7.5" r="1.5" fill="#FFFFFF"/>
+  <path d="M7.5 12h4.5M12 7.5v4.5" stroke="#FFFFFF" stroke-width="1.3"/>
+</svg><span class="skill-chip-name">Git</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 14.42 22 12A10 10 0 0 0 12 2z" fill="#FFFFFF"/>
+</svg><span class="skill-chip-name">GitHub</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 4.5c4.7 0 8.5 1.6 8.5 3.5s-3.8 3.5-8.5 3.5S3.5 9.9 3.5 8s3.8-3.5 8.5-3.5z" stroke="#F37626" stroke-width="1.6"/>
+  <path d="M12 12.5c4.7 0 8.5 1.6 8.5 3.5s-3.8 3.5-8.5 3.5-8.5-1.6-8.5-3.5 3.8-3.5 8.5-3.5z" stroke="#F37626" stroke-width="1.6"/>
+  <circle cx="5" cy="5" r="1.5" fill="#6E6E6E"/>
+  <circle cx="19" cy="19" r="1.5" fill="#6E6E6E"/>
+  <circle cx="12" cy="12" r="1" fill="#F37626"/>
+</svg><span class="skill-chip-name">Jupyter Notebook</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.5 15.5a3.5 3.5 0 1 1 0-7c2 0 3.5 2 5.5 3.5-2 1.5-3.5 3.5-5.5 3.5z" fill="#F9AB00"/>
+  <path d="M17.5 8.5a3.5 3.5 0 1 1 0 7c-2 0-3.5-2-5.5-3.5 2-1.5 3.5-3.5 5.5-3.5z" fill="#E37400"/>
+</svg><span class="skill-chip-name">Google Colab</span></div>
+              <div class="skill-chip"><svg class="skill-badge-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17.5 2.5l4.5 2.2v14.6l-4.5 2.2-11-8.5L2 16V8l4.5 3 11-8.5z" fill="#007ACC" fill-opacity="0.2"/>
+  <path d="M17.5 2.5L7.2 11.8 2 8v8l5.2-3.8 10.3 9.3 4.5-2.2V4.7L17.5 2.5z" stroke="#007ACC" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M17.5 2.5v19" stroke="#38BDF8" stroke-width="1.6"/>
+</svg><span class="skill-chip-name">VS Code</span></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Core Proficiency Benchmarks -->
+        <div class="skills-proficiency-card" data-animate>
+          <div class="proficiency-card-header">
+            <span class="proficiency-badge">⚡ Benchmarks</span>
+            <h3 class="proficiency-title">Core Proficiency</h3>
+            <p class="proficiency-subtitle">Demonstrated skill level across key domains</p>
+          </div>
+
+          <div class="proficiency-bars-list">
+            <div class="proficiency-item" data-animate>
+              <div class="proficiency-item-header">
+                <span class="proficiency-label">
+                  <svg class="skill-badge-icon bar-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11.9 2c-3.2 0-5.1 1.4-5.1 3.4v2.5h5.3v.8H4.6C2.6 8.7 1 10.4 1 13c0 2.5 1.6 4.3 3.6 4.3h1.8v-2.3c0-2 1.7-3.7 3.8-3.7h5.2c1.7 0 3-1.3 3-3V5.4c0-2-1.9-3.4-5-3.4h-1.5zm-1.8 1.9c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z" fill="#38BDF8"/>
+  <path d="M12.1 22c3.2 0 5.1-1.4 5.1-3.4v-2.5h-5.3v-.8h7.5c2 0 3.6-1.7 3.6-4.3 0-2.5-1.6-4.3-3.6-4.3h-1.8v2.3c0 2-1.7 3.7-3.8 3.7H8.6c-1.7 0-3 1.3-3 3v2.4c0 2 1.9 3.4 5 3.4h1.5zm1.8-1.9c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z" fill="#FACC15"/>
+</svg>
+                  <span>Python</span>
+                </span>
+                <span class="proficiency-pct">85%</span>
+              </div>
+              <div class="proficiency-track">
+                <div class="skill-bar-fill" data-width="85" style="--bar-color: var(--neon-purple)"></div>
+              </div>
+            </div>
+
+            <div class="proficiency-item" data-animate>
+              <div class="proficiency-item-header">
+                <span class="proficiency-label">
+                  <svg class="skill-badge-icon bar-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke- stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.5 2a3.5 3.5 0 0 0-3.5 3.5c0 .7.2 1.4.6 2A6 6 0 0 0 3 13a6 6 0 0 0 3.5 5.4 3.5 3.5 0 0 0 5 3.6"/>
+  <path d="M14.5 2a3.5 3.5 0 0 1 3.5 3.5c0 .7-.2 1.4-.6 2A6 6 0 0 1 21 13a6 6 0 0 1-3.5 5.4 3.5 3.5 0 0 1-5 3.6"/>
+  <circle cx="12" cy="12" r="2.5" fill="#06B6D4" fill-opacity="0.3"/>
+  <path d="M12 4v5.5M12 14.5V21M6.5 13H9.5M14.5 13h3"/>
+</svg>
+                  <span>Machine Learning</span>
+                </span>
+                <span class="proficiency-pct">75%</span>
+              </div>
+              <div class="proficiency-track">
+                <div class="skill-bar-fill" data-width="75" style="--bar-color: var(--neon-cyan)"></div>
+              </div>
+            </div>
+
+            <div class="proficiency-item" data-animate>
+              <div class="proficiency-item-header">
+                <span class="proficiency-label">
+                  <svg class="skill-badge-icon bar-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="4" width="4" height="16" rx="1.5" fill="#38BDF8"/>
+  <rect x="10" y="8" width="4" height="12" rx="1.5" fill="#C084FC"/>
+  <rect x="17" y="3" width="4" height="17" rx="1.5" fill="#FACC15"/>
+  <circle cx="5" cy="8" r="1" fill="#FFFFFF"/>
+  <circle cx="12" cy="12" r="1" fill="#FFFFFF"/>
+  <circle cx="19" cy="7" r="1" fill="#1E1B4B"/>
+</svg>
+                  <span>Data Analysis (Pandas/NumPy)</span>
+                </span>
+                <span class="proficiency-pct">80%</span>
+              </div>
+              <div class="proficiency-track">
+                <div class="skill-bar-fill" data-width="80" style="--bar-color: var(--neon-purple)"></div>
+              </div>
+            </div>
+
+            <div class="proficiency-item" data-animate>
+              <div class="proficiency-item-header">
+                <span class="proficiency-label">
+                  <svg class="skill-badge-icon bar-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke- xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="12" cy="5" rx="8" ry="3" fill="#38BDF8" fill-opacity="0.15"/>
+  <path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5" stroke-linecap="round"/>
+  <path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" stroke-linecap="round"/>
+  <path d="M11 10l2 2-2 2" stroke="#FACC15" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                  <span>SQL &amp; Querying</span>
+                </span>
+                <span class="proficiency-pct">70%</span>
+              </div>
+              <div class="proficiency-track">
+                <div class="skill-bar-fill" data-width="70" style="--bar-color: var(--neon-cyan)"></div>
+              </div>
+            </div>
+
+            <div class="proficiency-item" data-animate>
+              <div class="proficiency-item-header">
+                <span class="proficiency-label">
+                  <svg class="skill-badge-icon bar-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke- stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3 3v18h18" stroke="#64748B"/>
+  <path d="M7 16l4-7 4 4 5-9" stroke="#38BDF8"/>
+  <circle cx="7" cy="16" r="1.5" fill="#38BDF8" stroke="none"/>
+  <circle cx="11" cy="9" r="1.5" fill="#38BDF8" stroke="none"/>
+  <circle cx="15" cy="13" r="1.5" fill="#38BDF8" stroke="none"/>
+  <circle cx="20" cy="4" r="1.5" fill="#38BDF8" stroke="none"/>
+</svg>
+                  <span>Data Visualization</span>
+                </span>
+                <span class="proficiency-pct">78%</span>
+              </div>
+              <div class="proficiency-track">
+                <div class="skill-bar-fill" data-width="78" style="--bar-color: var(--neon-purple)"></div>
+              </div>
+            </div>
+
+            <div class="proficiency-item" data-animate>
+              <div class="proficiency-item-header">
+                <span class="proficiency-label">
+                  <svg class="skill-badge-icon bar-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke- xmlns="http://www.w3.org/2000/svg">
+  <circle cx="4" cy="6" r="2" fill="#C084FC"/>
+  <circle cx="4" cy="18" r="2" fill="#C084FC"/>
+  <circle cx="12" cy="4" r="2" fill="#C084FC"/>
+  <circle cx="12" cy="12" r="2" fill="#C084FC"/>
+  <circle cx="12" cy="20" r="2" fill="#C084FC"/>
+  <circle cx="20" cy="8" r="2" fill="#C084FC"/>
+  <circle cx="20" cy="16" r="2" fill="#C084FC"/>
+  <path d="M6 6l4-2M6 6l4 6M6 6l4 14M6 18l4-14M6 18l4-6M6 18l4 2M14 4l4 4M14 4l4 12M14 12l4-4M14 12l4 4M14 20l4-12M14 20l4-4" stroke="#C084FC" stroke-opacity="0.5" stroke-linecap="round"/>
+</svg>
+                  <span>Deep Learning</span>
+                </span>
+                <span class="proficiency-pct">65%</span>
+              </div>
+              <div class="proficiency-track">
+                <div class="skill-bar-fill" data-width="65" style="--bar-color: var(--neon-cyan)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">Projects are currently being developed and will be showcased here soon. Stay tuned!</p>
+      </div>
+
+      <div class="projects-coming-soon">
+        <div class="coming-soon-visual">
+          <div class="cs-orbit-wrapper">
+            <div class="cs-center-dot"></div>
+            <div class="cs-orbit cs-orbit-1">
+              <div class="cs-planet p1">🐍</div>
+            </div>
+            <div class="cs-orbit cs-orbit-2">
+              <div class="cs-planet p2">🤖</div>
+            </div>
+            <div class="cs-orbit cs-orbit-3">
+              <div class="cs-planet p3">📊</div>
+            </div>
+          </div>
+        </div>
+        <h3 class="cs-title">Projects In Progress</h3>
+        <p class="cs-desc">
+          Exciting Data Science and Machine Learning projects are currently being built.
+          Check back soon to see them in action!
+        </p>
+        <div class="cs-tags">
+          <span class="cs-tag">Machine Learning</span>
+          <span class="cs-tag">Data Analysis</span>
+          <span class="cs-tag">Deep Learning</span>
+          <span class="cs-tag">Python</span>
+          <span class="cs-tag">SQL</span>
+        </div>
+        <a href="https://github.com/thamarasee" target="_blank" rel="noopener" class="btn btn-outline" id="projects-github-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          View GitHub Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience" class="section experience-section">
+    <div class="exp-bg-glow"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Extra-Curricular</span>
+        <h2 class="section-title">University <span class="gradient-text">Experience</span></h2>
+        <p class="section-desc">Beyond academics — making an impact by empowering fellow students through teaching and mentoring.</p>
+      </div>
+
+      <!-- Role Banner -->
+      <div class="exp-role-banner" data-animate>
+        <div class="exp-role-left">
+          <div class="exp-role-badge">🏫 Official Role</div>
+          <h3 class="exp-role-title">Statistics Tutor</h3>
+          <div class="exp-role-org">Tutoring &amp; Supporting Center · Faculty of Computing and Technology</div>
+          <div class="exp-role-uni">University of Kelaniya, Sri Lanka</div>
+          <div class="exp-role-period">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            2 Years &nbsp;|&nbsp; Ongoing
+          </div>
+          <p class="exp-role-desc">
+            Serving as an active Statistics Tutor at the university's official Tutoring &amp; Supporting Center, conducting
+            dedicated Statistics sessions and support classes for difficult subject material — helping students
+            build confidence and achieve academic success.
+          </p>
+          <div class="exp-role-highlights">
+            <div class="exp-highlight">
+              <span class="exp-highlight-icon">📊</span>
+              <span>Statistics Sessions</span>
+            </div>
+            <div class="exp-highlight">
+              <span class="exp-highlight-icon">📐</span>
+              <span>Difficult Subject Support</span>
+            </div>
+            <div class="exp-highlight">
+              <span class="exp-highlight-icon">🎓</span>
+              <span>Student Mentoring</span>
+            </div>
+            <div class="exp-highlight">
+              <span class="exp-highlight-icon">⭐</span>
+              <span>Exemplary Performance Award</span>
+            </div>
+          </div>
+        </div>
+        <div class="exp-role-right">
+          <div class="exp-id-card-wrapper">
+            <div class="exp-id-glow"></div>
+            <img src="Tutor/Tutor ID.jpeg" alt="D.G. Thamarasee Kularathne — Official Tutor ID Card, Tutoring and Supporting Center, University of Kelaniya" class="exp-id-card" id="tutor-id-img" />
+            <div class="exp-id-label">Official Tutor ID · CS/2022/033</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Award Spotlight -->
+      <div class="exp-award-section" data-animate>
+        <div class="exp-award-left">
+          <div class="exp-award-header">
+            <span class="exp-award-icon">🏆</span>
+            <div>
+              <h3 class="exp-award-title">Exemplary Performance Award</h3>
+              <span class="exp-award-sub">Tutor of the Month — December</span>
+            </div>
+          </div>
+          <p class="exp-award-desc">
+            Recognized by the Tutoring &amp; Supporting Center, University of Kelaniya for <strong>Exemplary Performance</strong>
+            as a Statistics Tutor. This achievement reflects consistent dedication, quality teaching, and
+            positive student feedback — an honor awarded to only top-performing tutors each month.
+          </p>
+          <div class="exp-award-tags">
+            <span class="exp-tag exp-tag-gold">🥇 Tutor of the Month</span>
+            <span class="exp-tag">Statistics Category</span>
+            <span class="exp-tag">University of Kelaniya</span>
+          </div>
+        </div>
+        <div class="exp-award-right">
+          <div class="exp-award-img-wrapper">
+            <div class="exp-award-img-glow"></div>
+            <img src="Tutor/Exemplary Performance.jpeg"
+                 alt="Exemplary Performance — Tutors of the December, Tutoring and Supporting Center, University of Kelaniya. D.G. Thamarasee featured as Statistics Tutor of the month."
+                 class="exp-award-img" id="exemplary-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Session Gallery -->
+      <div class="exp-gallery-section">
+        <h3 class="exp-gallery-title">Session Highlights</h3>
+        <p class="exp-gallery-desc">A glimpse into the live tutoring sessions held at the Tutoring &amp; Supporting Center.</p>
+        <div class="exp-gallery-grid">
+          <div class="exp-gallery-card" data-animate>
+            <div class="exp-gallery-img-wrapper">
+              <img src="Tutor/During Sessions.png"
+                   alt="Thamarasee Kularathne teaching statistics on whiteboard — showing Normal Distribution and Z-score formula during a tutoring session"
+                   class="exp-gallery-img" id="session-teaching-img" />
+              <div class="exp-gallery-overlay">
+                <span class="exp-gallery-label">📊 Teaching Statistics</span>
+              </div>
+            </div>
+            <div class="exp-gallery-caption">
+              <h4>Live Statistics Teaching</h4>
+              <p>Explaining Normal Distribution &amp; Z-score calculations at the whiteboard during an active tutoring session.</p>
+            </div>
+          </div>
+          <div class="exp-gallery-card" data-animate>
+            <div class="exp-gallery-img-wrapper">
+              <img src="Tutor/Session Image 1.jpeg"
+                   alt="University students working on laptops during a tutoring session at the Tutoring and Supporting Center, Faculty of Computing and Technology, University of Kelaniya"
+                   class="exp-gallery-img" id="session-students-img" />
+              <div class="exp-gallery-overlay">
+                <span class="exp-gallery-label">💻 Student Session</span>
+              </div>
+            </div>
+            <div class="exp-gallery-caption">
+              <h4>Hands-on Student Sessions</h4>
+              <p>Students actively working during support sessions at the Tutoring &amp; Supporting Center, Faculty of Computing and Technology.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <!-- ==================== VOLUNTEERING SUBSECTION ==================== -->
+      <div id="volunteering" class="vol-section" data-animate>
+        <div class="vol-card">
+          <div class="vol-header">
+            <div class="vol-title-wrap">
+              <span class="vol-role-badge">Tutorial Creator</span>
+              <h3 class="vol-title">Sahurda Piyapath 2025</h3>
+              <p class="vol-org">Computer Science Students' Association (CSSA) &bull; University of Kelaniya</p>
+            </div>
+            <a href="Volunteering/Tutorial Creator.jpeg" target="_blank" rel="noopener" class="btn btn-outline vol-btn" id="vol-poster-link-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+              View Full Poster
+            </a>
+          </div>
+
+          <p class="vol-desc">
+            Created structured subject tutorials and conducted academic support sessions for <strong>G.C.E. Ordinary Level (O/L) students in rural schools</strong> across Sri Lanka.
+          </p>
+
+          <!-- Featured Row 1 Image (Shows Thamarasee Kularathne in Row 1) -->
+          <a href="Volunteering/Tutorial Creator.jpeg" target="_blank" rel="noopener" class="vol-img-link" title="Click to view full recognition poster">
+            <img
+              src="Volunteering/Tutorial Creator Row 1.jpeg"
+              alt="Sahurda Piyapath 2025 Tutorial Creators first row featuring Thamarasee Kularathne, CSSA University of Kelaniya"
+              class="vol-row1-img"
+              id="vol-poster-img" />
+            <div class="vol-img-overlay">
+              <span class="vol-zoom-hint">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                Click to view full original poster
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section id="education" class="section education-section">
+    <div class="edu-bg-glow"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education & <span class="gradient-text">Learning</span></h2>
+        <p class="section-desc">Academic milestones that shaped my expertise in data science.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-icon">🎓</div>
+              <div>
+                <span class="timeline-tag">Current</span>
+                <h3 class="timeline-title">B.Sc. in Computer Science</h3>
+                <span class="timeline-sub">Special in Data Science</span>
+              </div>
+            </div>
+            <div class="timeline-institution">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              University of Kelaniya, Sri Lanka
+            </div>
+            <div class="timeline-period">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              2024 – Present (3rd Year)
+            </div>
+            <p class="timeline-desc">
+              Pursuing a specialized degree combining core computer science with advanced data science modules
+              including machine learning, statistical analysis, data mining, and AI. Actively building
+              hands-on skills through coursework, projects, and self-learning.
+            </p>
+            <div class="timeline-skills">
+              <span class="timeline-skill-tag">Machine Learning</span>
+              <span class="timeline-skill-tag">Data Mining</span>
+              <span class="timeline-skill-tag">AI & Deep Learning</span>
+              <span class="timeline-skill-tag">Statistics</span>
+              <span class="timeline-skill-tag">Database Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-icon">📘</div>
+              <div>
+                <span class="timeline-tag timeline-tag-done">Completed</span>
+                <h3 class="timeline-title">G.C.E. Advanced Level</h3>
+                <span class="timeline-sub">Physical Science Stream</span>
+              </div>
+            </div>
+            <div class="timeline-institution">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              H/Weeraketiya Rajapaksha Central College, Sri Lanka
+            </div>
+            <div class="timeline-period">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Completed
+            </div>
+            <p class="timeline-desc">
+              Successfully completed the GCE Advanced Level examinations in the Physical Science stream,
+              qualifying for university entrance with an outstanding academic performance.
+            </p>
+            <div class="al-results">
+              <div class="al-result-item">
+                <div class="al-grade grade-a">A</div>
+                <div class="al-subject">Combined Mathematics</div>
+              </div>
+              <div class="al-result-item">
+                <div class="al-grade grade-b">B</div>
+                <div class="al-subject">Chemistry</div>
+              </div>
+              <div class="al-result-item">
+                <div class="al-grade grade-c">C</div>
+                <div class="al-subject">Physics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-icon">📗</div>
+              <div>
+                <span class="timeline-tag timeline-tag-done">Completed</span>
+                <h3 class="timeline-title">G.C.E. Ordinary Level</h3>
+                <span class="timeline-sub">Outstanding Results &mdash; 9 A's</span>
+              </div>
+            </div>
+            <div class="timeline-institution">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              H/Walasmulla National School, Sri Lanka
+            </div>
+            <div class="timeline-period">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Completed
+            </div>
+            <p class="timeline-desc">
+              Achieved an exceptional result in the GCE Ordinary Level examinations, earning
+              <strong>9 A's</strong> &mdash; a testament to strong academic dedication and consistent hard work
+              throughout secondary school.
+            </p>
+            <div class="ol-result-badge">
+              <span class="ol-badge-icon">&#11088;</span>
+              <span class="ol-badge-text">9 A's &mdash; GCE O/L</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== ACHIEVEMENTS ===== -->
+      <div class="achievements-section">
+        <h3 class="achievements-title">🏆 University Achievements</h3>
+
+        <!-- Paramount Hero Banner -->
+        <div class="paramount-banner" data-animate>
+          <div class="pb-left">
+            <div class="pb-event-label">Mathematics Competition</div>
+            <h4 class="pb-event-name">Paramount 4.0</h4>
+            <div class="pb-organiser">
+              Organized by <strong>Mathematics Students' Society</strong><br />
+              University of Kelaniya &nbsp;·&nbsp; 8th December 2024
+            </div>
+            <div class="pb-team-row">
+              <span class="pb-team-badge">⚡ Team: AXIOMATIX</span>
+              <span class="pb-faculty-badge">Faculty of Computing &amp; Technology</span>
+            </div>
+            <p class="pb-desc">
+              Competed against <strong>42 teams</strong> from across the university in this prestigious
+              inter-faculty mathematics competition. Team Axiomatix demonstrated exceptional
+              problem-solving, analytical thinking, and mathematical reasoning throughout all rounds.
+            </p>
+            <!-- Achievement Badges -->
+            <div class="pb-badges">
+              <div class="pb-badge pb-badge-gold">
+                <div class="pb-badge-icon">🥇</div>
+                <div class="pb-badge-info">
+                  <div class="pb-badge-title">Most Popular Category</div>
+                  <div class="pb-badge-sub">1st Place Winner</div>
+                </div>
+              </div>
+              <div class="pb-badge pb-badge-silver">
+                <div class="pb-badge-icon">🏅</div>
+                <div class="pb-badge-info">
+                  <div class="pb-badge-title">Top 05 Teams</div>
+                  <div class="pb-badge-sub">Out of 42 competing teams</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pb-right">
+            <div class="pb-img-stack">
+              <div class="pb-img-glow"></div>
+              <img
+                src="University Archievements/Top 5 Selected.jpeg"
+                alt="Team Axiomatix — Paramount 4.0 Top 05 selection graphic by Mathematics Students' Society, University of Kelaniya"
+                class="pb-img pb-img-top" id="paramount-top5-img" />
+              <img
+                src="University Archievements/Runners up of the Most popular category.jpeg"
+                alt="Team Axiomatix — Paramount 4.0 Most Popular Category Top 10, Faculty of Computing and Technology"
+                class="pb-img pb-img-bottom" id="paramount-popular-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo Gallery Grid -->
+        <div class="achievement-gallery" data-animate>
+          <h4 class="ach-gallery-title">Competition Highlights</h4>
+          <div class="ach-gallery-grid">
+
+            <!-- Certificate Receive -->
+            <div class="ach-card ach-card-wide">
+              <div class="ach-img-wrapper">
+                <img
+                  src="University Archievements/Certificate Recieve.jpeg"
+                  alt="Thamarasee Kularathne receiving certificate at Paramount 4.0 Final Round, Mathematics Students' Society, University of Kelaniya, December 2024"
+                  class="ach-img" id="ach-cert-img" />
+                <div class="ach-img-overlay">
+                  <span class="ach-overlay-label">📜 Receiving Certificate</span>
+                </div>
+              </div>
+              <div class="ach-card-caption">
+                <h5>Certificate Ceremony</h5>
+                <p>Receiving the official certificate at the Paramount 4.0 Final Round &mdash; 8th December 2024.</p>
+              </div>
+            </div>
+
+            <!-- Gifts Receive -->
+            <div class="ach-card ach-card-wide">
+              <div class="ach-img-wrapper">
+                <img
+                  src="University Archievements/Gifts Recieve.jpeg"
+                  alt="Team Axiomatix receiving gifts at Paramount 4.0 Final Round from a lecturer, Mathematics Students' Society, University of Kelaniya"
+                  class="ach-img" id="ach-gifts-img" />
+                <div class="ach-img-overlay">
+                  <span class="ach-overlay-label">🎁 Prize Ceremony</span>
+                </div>
+              </div>
+              <div class="ach-card-caption">
+                <h5>Prize Giving Ceremony</h5>
+                <p>Team Axiomatix receiving prizes at the Paramount 4.0 Final Round award ceremony.</p>
+              </div>
+            </div>
+
+            <!-- CSSA Congratulations — full width -->
+            <div class="ach-card ach-card-full">
+              <div class="ach-img-wrapper ach-img-wrapper-sqr">
+                <img
+                  src="University Archievements/Congratulations post by faculty CSSA society.jpeg"
+                  alt="Computer Science Students' Association (CSSA), University of Kelaniya congratulates Team Axiomatix — Thamarasee Kularathna, Lakmina Rubasinghe, Hiumie Hungampola, Siluni Gallaba — for their achievement at Paramount 4.0"
+                  class="ach-img" id="ach-cssa-img" />
+                <div class="ach-img-overlay">
+                  <span class="ach-overlay-label">🎉 Official Recognition by CSSA</span>
+                </div>
+              </div>
+              <div class="ach-card-caption">
+                <h5>CSSA Official Recognition</h5>
+                <p>The Computer Science Students' Association (CSSA), University of Kelaniya officially congratulated Team Axiomatix for their outstanding achievement at Paramount 4.0!</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Placeholder -->
+      <div class="cert-section">
+        <h3 class="cert-title">Certifications & Courses</h3>
+        <div class="cert-grid">
+
+          <!-- SLIIT AI/ML Stage 01 Certificate -->
+          <div class="cert-card cert-card-active" data-animate>
+            <a href="Online Certifications/SLIIT-AI_ML Stage 01.pdf" target="_blank" rel="noopener" class="cert-img-wrapper" title="Click to view full certificate PDF">
+              <img
+                src="Online Certifications/SLIIT-AI_ML Stage 01.png"
+                alt="SLIIT AI/ML Engineer - Stage 1 Certificate of Completion awarded to Thamarasee Kularathne"
+                class="cert-preview-img"
+                id="cert-sliit-img" />
+              <div class="cert-img-overlay">
+                <span class="cert-overlay-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </span>
+                <span class="cert-overlay-text">View Certificate</span>
+              </div>
+              <span class="cert-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Verified
+              </span>
+            </a>
+            <div class="cert-content">
+              <div class="cert-header">
+                <span class="cert-tag-pill">AI & Machine Learning</span>
+              </div>
+              <h4 class="cert-name">AI/ML Engineer &mdash; Stage 1</h4>
+              <div class="cert-issuer">SLIIT &bull; Faculty of Computing (CODE)</div>
+              <p class="cert-desc">
+                Completed the professional AI/ML Stage 1 certification course conducted by the Centre for Open and Distance Education (CODE), Faculty of Computing at SLIIT.
+              </p>
+              <div class="cert-meta">
+                <span class="cert-meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Issued: 2026-03-06
+                </span>
+                <span class="cert-meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  ID: fgpnevc9vn
+                </span>
+              </div>
+              <div class="cert-actions">
+                <a href="Online Certifications/SLIIT-AI_ML Stage 01.pdf" target="_blank" rel="noopener" class="btn btn-outline cert-btn" id="cert-sliit-pdf-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  View Certificate (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kaggle Competitions Placeholder -->
+          <div class="cert-card cert-placeholder" data-animate>
+            <div class="cert-icon">&#127942;</div>
+            <div class="cert-name">Kaggle Competitions</div>
+            <div class="cert-issuer">In Progress</div>
+            <p class="cert-desc">Competitive data science achievements and notebooks will be showcased here.</p>
+          </div>
+
+          <!-- Professional Workshops Placeholder -->
+          <div class="cert-card cert-placeholder" data-animate>
+            <div class="cert-icon">&#128161;</div>
+            <div class="cert-name">Professional Workshops</div>
+            <div class="cert-issuer">Coming Soon</div>
+            <p class="cert-desc">Workshop and bootcamp certificates will be featured here soon.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section contact-section">
+    <div class="contact-bg-glow"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-desc">Open to internship opportunities, collaborations, and data science discussions!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <div class="contact-intro">
+            <p>
+              I'm actively seeking <strong>Data Science and ML internships</strong> for 2026.
+              Whether you have an exciting opportunity, a project collaboration idea, or just want
+              to connect — my inbox is always open!
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:thamaraseekularathne11@gmail.com" class="contact-link-card" id="contact-email-card">
+              <div class="clc-icon email-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="clc-text">
+                <span class="clc-label">Email</span>
+                <span class="clc-value">thamaraseekularathne11@gmail.com</span>
+              </div>
+              <svg class="clc-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/thamarasee-kularathne-69236b352/" target="_blank" rel="noopener" class="contact-link-card" id="contact-linkedin-card">
+              <div class="clc-icon linkedin-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="clc-text">
+                <span class="clc-label">LinkedIn</span>
+                <span class="clc-value">thamarasee-kularathne</span>
+              </div>
+              <svg class="clc-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="https://github.com/thamarasee" target="_blank" rel="noopener" class="contact-link-card" id="contact-github-card">
+              <div class="clc-icon github-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="clc-text">
+                <span class="clc-label">GitHub</span>
+                <span class="clc-value">github.com/thamarasee</span>
+              </div>
+              <svg class="clc-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Internship Opportunity / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-input form-textarea" placeholder="Tell me about the opportunity or your project..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <div class="form-success" id="form-success">
+              <span>✅</span> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          thamarasee
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/thamarasee" target="_blank" rel="noopener" aria-label="GitHub" class="footer-social">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/thamarasee-kularathne-69236b352/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:thamaraseekularathne11@gmail.com" aria-label="Email" class="footer-social">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>© 2026 Thamarasee Kularathne. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
